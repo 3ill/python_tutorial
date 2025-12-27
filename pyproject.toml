@@ -1,0 +1,26 @@
+[tool.commitizen]
+name = "cz_customize"
+tag_format = "$version"
+version_scheme = "pep440"
+version_provider = "uv"
+update_changelog_on_bump = true
+major_version_zero = true
+
+[tool.commitizen.customize]
+questions = [
+    { type = "list", name = "type", message = "Select the type of change", choices = [
+        { value = "feat", name = "feat: A new feature" },
+        { value = "fix", name = "fix: A bug fix" },
+        { value = "docs", name = "docs: Documentation only changes" },
+        { value = "style", name = "style: Changes that do not affect the meaning of the code" },
+        { value = "refactor", name = "refactor: A code change that neither fixes a bug nor adds a feature" },
+        { value = "perf", name = "perf: A code change that improves performance" },
+        { value = "test", name = "test: Adding missing tests" },
+        { value = "chore", name = "chore: Changes to the build process or auxiliary tools" },
+        {value = "custom", name = "custom: Changes not described by other values"}
+    ]},
+    { type = "input", name = "scope", message = "What is the scope of this change? (optional, press enter to skip)" },
+    { type = "input", name = "subject", message = "Write a short, imperative tense description of the change" },
+    { type = "input", name = "body", message = "Provide a longer description of the change (optional)" },
+]
+message_template = "{{type}}{% if scope %}({{scope}}){% endif %}: {{subject}}{% if body %}\n\n{{body}}{% endif %}"
