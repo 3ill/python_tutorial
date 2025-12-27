@@ -37,3 +37,5 @@ print(random_string.strip())
 
 
 print("Chike" in random_string)
+
+print("Chike" not in random_string)
