@@ -5,7 +5,7 @@ stringLength = len(newString)
 
 
 # Slice
-# This returns the first 3 characters
+# This returns the first 2 characters. the 3rd character is non inclusive
 print(newString[0:3])
 
 
