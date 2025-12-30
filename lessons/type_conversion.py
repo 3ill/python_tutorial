@@ -2,4 +2,4 @@
 x = int(input("x: "))
 y = x + 1
 
-print(type(str(y)))
+print(f"the value of x is {x} \nthe value of y is {y}")
