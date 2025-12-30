@@ -1,9 +1,7 @@
-
 # String Manipulation
 # This returns the length of the string
 newString = "I am learning python, i am liking it"
 stringLength = len(newString)
-
 
 
 # Slice
