@@ -22,7 +22,23 @@ for number in range(1, 5):
 else:
     print("Attempted to send the message 4 times")
 
-
+# Nested loops
+# When working with nested loops, the inner loop executes first.
+# In this case x is 0 and y is looped through , Then x is 1 and y is looped through
+# The result looks like (0, 0), (0, 1), (0, 2).... (1, 0), (1, 1), (1, 2)... (2, 0)
 for x in range(5):
     for y in range(4):
         print(f"({x}, {y})")
+
+
+# While Loops
+# While loops are used to perform evaluation while a condition holds true, on like a for statement, there are no iterables to iterate over
+number = 100
+while number > 0:
+    number //= 2
+    print(number)
+
+command = ""
+while command != "quit":
+    command = input(">").lower()
+    print(f"you typed {command}")
