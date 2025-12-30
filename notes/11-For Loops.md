@@ -1,15 +1,11 @@
 ---
 title:
 tags:
-  - note
-  - code
-  - python
-type: code
+type:
 author:
 creationDate:
 alias:
 ---
-
 >[!summary]
 >_This note outlines how to use for loops in python_
 
@@ -40,7 +36,6 @@ for number in range(1, 6, 2):
 
 ```
 
-
 ## For else statement
 A for else statement is used when you want to perform an operation if the code in the for loop never executes. this is similar to the default statement when using `switch` statements in Javascript
 ```python
@@ -66,8 +61,10 @@ for x in range(5):
         print(f"({x}, {y})")
 ```
 
+>[!important]
+>It is important to know that `range` is not the only iterable type in python. `list` and `string` are also iterable and you can make a custom object and make it iterable as well
 
 
 
 ##### Go Back: [[10-Comparison & Conditional Statements]]
-##### Up Next: [[]]
+##### Up Next: [[12-While Loops]]
