@@ -6,6 +6,10 @@ version_provider = "uv"
 update_changelog_on_bump = true
 major_version_zero = true
 
+[tool.ruff]
+line-length = 100
+
+
 [tool.commitizen.customize]
 questions = [
     { type = "list", name = "type", message = "Select the type of change", choices = [
