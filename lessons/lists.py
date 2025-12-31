@@ -84,6 +84,7 @@ def remove_duplicates():
             duplicated_lists.pop(duplicated_lists.index(item))
             print(f"duplicate number found and removed {item}")
     else:
+        duplicated_lists.sort()
         print(f"duplicates processed successfully. new list {duplicated_lists}")
 
 
