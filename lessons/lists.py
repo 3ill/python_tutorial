@@ -73,3 +73,18 @@ new_numbers.append(30)
 
 print(new_numbers)
 print(f"copy: {new_numbers2}")
+
+
+duplicated_lists = [1, 2, 2, 3, 4, 6, 9, 6, 9]
+
+
+def remove_duplicates():
+    for item in duplicated_lists:
+        if duplicated_lists.count(item) > 1:
+            duplicated_lists.pop(duplicated_lists.index(item))
+            print(f"duplicate number found and removed {item}")
+    else:
+        print(f"duplicates processed successfully. new list {duplicated_lists}")
+
+
+remove_duplicates()
