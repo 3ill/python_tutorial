@@ -33,12 +33,20 @@ for x in range(5):
 
 # While Loops
 # While loops are used to perform evaluation while a condition holds true, on like a for statement, there are no iterables to iterate over
-number = 100
-while number > 0:
-    number //= 2
-    print(number)
+# number = 100
+# while number > 0:
+#     number //= 2
+#     print(number)
 
-command = ""
-while command != "quit":
-    command = input(">").lower()
-    print(f"you typed {command}")
+# command = ""
+# while command != "quit":
+#     command = input(">").lower()
+#     print(f"you typed {command}")
+
+
+count = 0
+for number in range(1, 10):
+    if number % 2 == 0:
+        count += 1
+        print(number)
+print(f"We have {count} even numbers")
