@@ -43,8 +43,8 @@ print(new_numbers)
 
 # By default, pop will remove and return the last item in the list but it also accepts an index as args.
 # If index is provided, it will remove and return the element at that index
-# popped_index = new_numbers.pop()
-# print(f"removed {popped_index}")
+popped_index = new_numbers.pop()
+print(f"removed {popped_index}")
 
 index = new_numbers.index(17)
 print(f"17 is at index {index}")
