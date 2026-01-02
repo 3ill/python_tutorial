@@ -15,13 +15,14 @@ questions = [
     { type = "list", name = "type", message = "Select the type of change", choices = [
         { value = "feat", name = "feat: A new feature" },
         { value = "fix", name = "fix: A bug fix" },
-        { value = "docs", name = "docs: Documentation only changes" },
+        { value = "docs", name = "docs: Documentationfastapi only changes" },
         { value = "style", name = "style: Changes that do not affect the meaning of the code" },
+        {value = "revert", name = "revert: rollback changes made"},
         { value = "refactor", name = "refactor: A code change that neither fixes a bug nor adds a feature" },
         { value = "perf", name = "perf: A code change that improves performance" },
         { value = "test", name = "test: Adding missing tests" },
         { value = "chore", name = "chore: Changes to the build process or auxiliary tools" },
-        {value = "custom", name = "custom: Changes not described by other values"}
+        {value = "custom", name = "custom: Changes not described by other values"},
     ]},
     { type = "input", name = "scope", message = "What is the scope of this change? (optional, press enter to skip)" },
     { type = "input", name = "subject", message = "Write a short, imperative tense description of the change" },
