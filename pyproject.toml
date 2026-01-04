@@ -15,7 +15,7 @@ questions = [
     { type = "list", name = "type", message = "Select the type of change", choices = [
         { value = "feat", name = "feat: A new feature" },
         { value = "fix", name = "fix: A bug fix" },
-        { value = "docs", name = "docs: Documentationfastapi only changes" },
+        { value = "docs", name = "docs: Documentation fastapi only changes" },
         { value = "style", name = "style: Changes that do not affect the meaning of the code" },
         {value = "revert", name = "revert: rollback changes made"},
         { value = "refactor", name = "refactor: A code change that neither fixes a bug nor adds a feature" },
