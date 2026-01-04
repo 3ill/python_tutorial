@@ -1,6 +1,6 @@
 # import inheritance
 from inheritance import RequestHandler
-from utils.util import SortNumbers
+from utils import util
 
 new_handler = RequestHandler("https://modules.com")
 path = new_handler.get_url("login")
@@ -8,5 +8,5 @@ path = new_handler.get_url("login")
 print(path)
 
 
-sorter = SortNumbers()
+sorter = util.SortNumbers()
 print(f"Max number => {sorter.find_max()}")
