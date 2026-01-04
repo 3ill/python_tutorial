@@ -31,3 +31,25 @@ def deconstruct():
 
 a, b, c, d = deconstruct()
 print(a, b, c, d)
+
+
+# Dummy db
+#
+
+
+user = {"firstName": "Chike", "lastName": "Egbu", "email": "chikeegbu@gmail.com"}
+user_table = [user]
+
+
+def validate_user(email: str, _phone: str):
+    is_user_valid: bool = False
+    for user in user_table:
+        if user["email"].lower() == email.lower():
+            is_user_valid = True
+            user["phone_number"] = _phone
+    print(user_table[0])
+    return is_user_valid
+
+
+is_valid = validate_user("chikeegbu@gmail.com", "123456")
+print(f"is user valid: {is_valid}")
